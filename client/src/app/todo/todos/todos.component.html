@@ -1,0 +1,14 @@
+<div class="title">
+	<h1>TIL: Today I Learned</h1>
+	<h2>{{ today | date:'medium' }}</h2>
+</div>
+<div>
+	<div class="todo" *ngFor="let todo of todos; index as i "(click)=toggleTodo(todo)>
+		<app-todo [todo]="todo"></app-todo>
+		<app-delete-todo [index]=i (onDeleteTodo)="deleteTodo($event)"></app-delete-todo>
+	</div>
+	<div>{{results}}</div>
+</div>
+<div>
+	<app-add-todo (onTodoAdded)="addTodo($event)"></app-add-todo>	
+</div>

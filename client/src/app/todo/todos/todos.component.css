@@ -1,0 +1,26 @@
+.title {
+	background-color: #039be5;
+	color: white;
+	font-weight: normal;
+	padding: 46px 26px 26px 16px
+}
+
+h1,h2 { 
+	margin: 0;
+	font-weight: normal;
+}
+h1 {
+	margin-bottom: 16px
+}
+
+/*.todo { 
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+}*/
+app-todo {
+	margin-right:20px;
+}
+app-add-todo { 
+	border-bottom: 1px solid #ccc;
+	display:block;
+}
