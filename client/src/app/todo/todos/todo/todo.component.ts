@@ -25,8 +25,8 @@ import { Todo } from '../../share/todo.model'
       background-color: white;
       position:absolute;
       border: 1px solid darkgray;
-      top: -6px;
-      left: -8px;
+      top: -5px;
+      left: -5px;
     }
     input:checked:after {
       content: "\\2713";
@@ -36,19 +36,20 @@ import { Todo } from '../../share/todo.model'
       height: 20px;
       border-radius: 20px;
       position:absolute;
-      top: -6px;
-      left: -8px;
+      top: -5px;
+      left: -5px;
       text-align: center;
       color:white;
       background-color: #039be5;
       border: 1px solid darkgray;
     }
     input:checked + label {
-      text-decoration: line-through;
-      text-decoration-: 2px solid black; 
+      text-decoration: line-through black;
+      
     }
     label {
-      margin: 7px;
+      margin: 7px 7px 7px 13px;
+
     }
   `]
 })

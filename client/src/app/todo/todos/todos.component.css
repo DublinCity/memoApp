@@ -1,8 +1,22 @@
+.container {
+	min-width:100vw;
+	/*border: 1px solid dimgray;*/
+	/*background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+}
 .title {
+	border-radius: 1rem;
+	width: 100%;
 	background-color: #039be5;
 	color: white;
 	font-weight: normal;
-	padding: 46px 26px 26px 16px
+	padding: 20px 16px 20px 16px;
+	text-align: center;
+	box-shadow: 0 0 7px rgba(0,0,0,0.2), inset 0 0 1px rgba(0,0,0,0.2);
 }
 
 h1,h2 { 
@@ -13,14 +27,37 @@ h1 {
 	margin-bottom: 16px
 }
 
-/*.todo { 
-	border-bottom: 1px solid #ccc;
-	display: inline-block;
-}*/
-app-todo {
-	margin-right:20px;
+.todoList { 
+	/*margin-left: 4rem;*/
+	max-width: 400px;
+	width: 120%;
+	margin: 0;
+	padding: 0;
 }
-app-add-todo { 
+.todo {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: .05rem solid #D8D8D8;
+	margin-bottom: 1.3px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.14);
+}
+app-todo {
+	background: rgba(0,0,0,0);
+}
+.todo:nth-child(even) {
+  transform: perspective(100px) rotateX(2deg) translateY(3px) scale(1.001);
+  background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+}
+.todo:nth-child(odd) {
+	transform: perspective(100px) rotateX(-2deg) translateY(4px);
+	background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+app-add-todo {
+	margin-top: 5rem; 
+	width: 100%;
+	/*margin-left: 4rem;*/
 	border-bottom: 1px solid #ccc;
 	display:block;
+	border-radius: 1rem;
+	box-shadow: 0 0 4px rgba(0,0,0,0.6), inset 0 0 2px rgba(0,0,0,0.4);
 }

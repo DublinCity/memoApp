@@ -30,7 +30,7 @@ import { HttpClient } from '@angular/common/http';
       text-align:center;
       border: 1px solid dimgray;
       background-color: #d81b60;
-      line-height: 17px;
+      line-height: 22px;
     }
   `]
 })

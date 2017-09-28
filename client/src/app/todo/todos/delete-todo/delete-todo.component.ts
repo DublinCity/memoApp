@@ -10,12 +10,14 @@ import { Component, OnInit, EventEmitter,Output,Input } from '@angular/core';
       display: inline-block;
     }
     button {
+      margin-right: 8px;
+      position:relative;
+      top: 13px;
       font-size : 20px;
       align: right;
       border: none;
       color: darkgray;
-      background-color: white;
-      
+      background: rgba(0,0,0,0);      
     }
   `]
 })
