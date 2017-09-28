@@ -17,6 +17,7 @@ import { HttpClient } from '@angular/common/http';
       display: inline-block;
       font-size: 18px;
       border: none;
+      width:90%;
     }
     input:focus, button:focus {
       outline: none;

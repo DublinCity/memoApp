@@ -32,6 +32,7 @@ export class DeleteTodoComponent implements OnInit {
   
   deleteTodo() {
     this.onDeleteTodo.emit(this.index)
-    console.log('hi')
+    console.log('delete index :',this.index)
+
   }
 }

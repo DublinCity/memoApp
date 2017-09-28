@@ -30,20 +30,23 @@ app.get('/api',function(req,res){
 })
 
 app.post('/api',function(req,res){
+	let _title = req.params.title.trim()
 	let sql = 'INSERT INTO todoList (title) VALUES (:title)'
 	db.query(sql,{
 		params:{
-			title: req.body.title
+			title: _title
 		}
 	})
 	res.redirect('/')
 })
 
 app.delete('/api/:title',function(req,res){
+	
+	let _title = req.params.title.trim()
 	let sql = 'DELETE FROM todoList WHERE title=:title'
 	db.query(sql,{
 		params: {
-			title: req.params.title
+			title: _title
 		}
 	})
 	

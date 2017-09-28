@@ -45,6 +45,7 @@ export class TodosComponent implements OnInit {
   	let title = this.todos[index].text
     this.http.delete('/api/'+title).subscribe(data=>{
     })
+    console.log('h?')
     this.todos.splice(index,1)
   }
 
