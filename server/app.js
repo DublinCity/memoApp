@@ -1,13 +1,9 @@
+const password = require('./password.js')
 const express = require('express')
 const app = express()
 const OrientDB = require('orientjs');
 
-const server = OrientDB({
-   host:       'localhost',
-   port:       2424,
-   username:   'root',
-   password:   'white7546'
-});
+const server = OrientDB(password.user);
 
 
 const db = server.use('todo')
