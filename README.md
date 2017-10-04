@@ -12,7 +12,7 @@ side Feature:
 ## Install
 
 1. mkdir any directory and cd the directory 
-2. git clone https://github.com/DublinCity/myFirstApp.git
+2. git clone https://github.com/DublinCity/memoApp.git
 2. cd myFirstApp && npm install
 
 ## Usage 
@@ -25,6 +25,7 @@ side Feature:
 - angular2 (npm package)
 
 ## To start
-- `$myFirstApp/npm start`
+- modify password.template.js to password.js and inner content(userInfo) also. 
+- `$memoApp/npm start`
 - this command consist of server.sh(execute orientDB), ng serve(execute angualr2),   
 node server/app.js(execute expressApi)
