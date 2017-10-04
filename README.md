@@ -2,7 +2,7 @@
 # TodoList-App by angular2 / express / orientDB / nodeJS
 
 ## Preview
-<img src="https://github.com/DublinCity/myFirstApp/blob/master/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202017-09-28%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2011.35.59.png" width=300px; height=500px;>
+<img src="https://github.com/DublinCity/memoApp/blob/master/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-09-28%20%EC%98%A4%ED%9B%84%2011.35.59.png?raw=true" width=300px; height=500px;>
 
 side Feature:
 - javascript
@@ -12,7 +12,7 @@ side Feature:
 ## Install
 
 1. mkdir any directory and cd the directory 
-2. git clone https://github.com/DublinCity/myFirstApp.git
+2. git clone https://github.com/DublinCity/memoApp.git
 2. cd myFirstApp && npm install
 
 ## Usage 
@@ -25,6 +25,7 @@ side Feature:
 - angular2 (npm package)
 
 ## To start
-- `$myFirstApp/npm start`
+- modify password.template.js to password.js and inner content(userInfo) also. 
+- `$memoApp/npm start`
 - this command consist of server.sh(execute orientDB), ng serve(execute angualr2),   
 node server/app.js(execute expressApi)
